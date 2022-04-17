@@ -1,0 +1,557 @@
+html {
+    background-image: url("../res/img/ethernum-wallpaper.jpg");
+    background-size: cover;
+    scroll-behavior: smooth;
+    /*background-color: rgb(53,56,57);*/
+
+}
+
+body {
+    margin: 0;
+    scroll-padding-block: 20px;
+}
+
+/*
+Default
+*/
+
+header a, #mini_header a, footer a {
+    color: white;
+    text-decoration: none;
+}
+
+header a:visited, #mini_header a:visited, footer a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+/*
+Nav Menu
+*/
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    margin: auto 0 0 auto;
+}
+
+#menu > nav {
+    margin: auto 0 0 auto;
+    flex-wrap: wrap;
+}
+
+#menu > nav div {
+    padding: 36px 20px;
+}
+
+#menu_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    user-select: none;
+    font-size: 48px;
+    width: 105px;
+    height: 100%;
+}
+
+#nav-menu {
+    position: fixed;
+    background-color: rgb(36, 37, 32);
+    top: -224px;
+    right: 0;
+}
+
+#nav-menu > div > a > div {
+    padding: 8px 32px
+}
+
+/*
+Header
+*/
+
+header {
+    background-color: rgb(36, 37, 32);
+    font-family: "Aladin", "Calibri", sans-serif;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 176px;
+    color: white;
+}
+
+header > * {
+    margin: auto 16px;
+}
+
+header > img {
+    width: 96px;
+    height: 96px;
+    margin-top: 16px;
+    margin-right: 16px;
+    margin-left: 16px;
+}
+
+header > div > nav {
+    display: flex;
+    flex-direction: row;
+    font-family: "Calibri", sans-serif;
+    width: 100%;
+}
+
+header > nav > a > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    width: auto;
+    height: auto;
+}
+
+#top {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+#mini_header {
+    position: fixed;
+    background-color: rgb(36, 37, 32);
+    font-family: "Aladin", "Calibri", sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    visibility: hidden;
+    font-size: 13px;
+    color: white;
+    width: 100%;
+    height: 64px;
+    top: -128px;
+}
+
+#mini_header :last-child {
+    margin: auto 0 auto auto;
+}
+
+#mini_header > img {
+    width: 48px;
+    height: 48px;
+}
+
+#mini_header > * {
+    margin: auto 16px;
+}
+
+#mini_header > nav {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 auto;
+}
+
+#mini_header > nav :last-child {
+    visibility: hidden;
+}
+
+#mini_header > nav > div > a > div {
+    padding: 8px 32px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    font-family: "Calibri", sans-serif;
+    margin: 0 auto 0 0;
+}
+
+nav > a > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    width: auto;
+    height: auto;
+}
+
+/*
+Main
+*/
+
+#main {
+    display: flex;
+    flex-direction: row;
+}
+
+.side {
+    width: 10%;
+    height: 100%;
+}
+
+#social {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    right: -46px;
+    top: 35%;
+}
+
+#social > div {
+    background-color: white;
+    border: black 3px solid;
+    padding: 4px;
+}
+
+#social > div:first-child {
+    box-shadow: black 1px 1px 8px 1px;
+    border-right: 0;
+}
+
+#social > div:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px;
+}
+
+#social > div:last-child img {
+    width: 32px;
+    height: auto;
+    margin: 4px auto;
+}
+
+.article {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    align-items: center;
+    justify-content: space-around;
+    font-family: "Calibri", sans-serif;
+    background-color: rgb(255, 250, 250);
+    border: #444 4px groove;
+    border-radius: 24px 48px;
+    font-size: 17px;
+    text-align: justify;
+    width: 80%;
+    height: auto;
+    margin: 64px 5%;
+    padding: 16px;
+}
+
+.multiple {
+    display: flex;
+}
+
+.article > * {
+    margin: auto 8px;
+}
+
+.article > .text {
+    width: 45%;
+    height: auto;
+}
+
+.article > img {
+    width: auto;
+    height: 256px;
+    border-radius: 8px;
+}
+
+.text > h3 {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.single > .text {
+    width: 90%;
+}
+
+.wrapped {
+    width: 95%;
+}
+
+.team {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: rgb(255, 250, 250);
+    border: black 2px outset;
+    border-radius: 16px 32px;
+    font-family: "Calibri", sans-serif;
+    margin: 32px auto;
+    padding: 16px;
+    width: 80%;
+    height: auto;
+}
+
+.team > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team > div > div {
+    display: flex;
+    flex-direction: row;
+}
+
+.team img {
+    width: 128px;
+    height: 128px;
+}
+
+#up {
+    position: fixed;
+    background-color: white;
+    border: black 4px solid;
+    border-radius: 128px;
+    height: 48px;
+    width: auto;
+    right: -96px;
+    bottom: 32px;
+}
+
+/*
+Footer
+*/
+
+footer {
+    background-color: rgb(36, 37, 32);
+    font-family: "Calibri", sans-serif;
+    font-size: 11px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 100%;
+    height: 64px;
+}
+
+footer > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+/*
+Formulary
+*/
+
+.formulary {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: black 2px outset;
+    font-family: "Calibri", sans-serif;
+    border-radius: 16px 32px;
+    margin: 32px 10% 32px 10%;
+    padding: 16px;
+    width: auto;
+    height: auto;
+}
+
+.formulary input {
+    width: 100%;
+}
+
+.formulary > form {
+    width: 90%;
+    padding: 32px 5%;
+}
+
+.formulary > form > div {
+    display: flex;
+    flex-direction: row;
+}
+
+.formulary > form > div * {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 2;
+    flex-basis: 0;
+    padding: 8px 5%;
+}
+
+.formulary > form > div:last-child {
+    justify-content: center;
+}
+
+#submit {
+    width: 30%;
+    margin: 32px auto;
+}
+
+#submit > input {
+    padding: 16px;
+}
+
+/*
+Medias
+*/
+
+@media screen and (max-width: 1375px) {
+    #menu > nav div {
+        padding: 12px 20px;
+    }
+}
+
+@media screen and (min-width: 1375px) {
+    #menu > nav div {
+        padding: 36px 20px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    header {
+        height: 220px;
+    }
+
+    .article {
+        flex-direction: column;
+    }
+
+    .multiple {
+        flex-direction: column;
+    }
+
+    .article .text, .single .text {
+        width: 95%;
+    }
+
+    .multiple .text {
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    header {
+        height: 176px;
+    }
+
+    .article {
+        flex-direction: row;
+    }
+
+    .multiple {
+        flex-direction: column;
+    }
+
+    .article .text {
+        width: 45%;
+    }
+
+    .single .text {
+        width: 95%;
+    }
+
+    .multiple .text {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    header {
+        height: 196px;
+    }
+
+    #top > h1 {
+        font-size: 24px;
+    }
+
+    .article > img {
+        width: 380px;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 900px) {
+
+}
+
+@media screen and (max-width: 790px) {
+    #menu {
+        visibility: hidden;
+    }
+
+    header {
+        height: 176px;
+    }
+}
+
+@media screen and (min-width: 790px) {
+    #menu {
+        visibility: visible;
+    }
+
+    header {
+        height: 220px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    #mini_header > h1 {
+        font-size: 17px;
+    }
+}
+
+@media screen and (min-width: 660px) {
+
+}
+
+/*
+Fonts registering
+*/
+
+@font-face {
+    src: url("../res/font/Aladin-Regular.ttf");
+    font-family: "Aladin";
+}
+
+/*
+Extras
+*/
+
+#-- {
+    position: absolute;
+    background-color: black;
+    visibility: hidden;
+    color: white;
+    width: 365px;
+    height: 330px;
+}
+
+#display {
+    height: 60%;
+    width: 60%;
+}
+
+#pca {
+    height: 40%;
+    width: 40%;
+}
+
+#photo {
+    height: 75%;
+    width: 75%;
+}
+
+#statut {
+    height: 50%;
+    width: 50%;
+}
+
+a:visited {
+    color: black;
+}
+
+a {
+    color: black;
+}
